@@ -1,11 +1,153 @@
-@import 'tailwindcss';
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+@import "tailwindcss";
 
+/* Blade files */
+@source "../views/**/*.blade.php";
+@source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
+
+/* JavaScript files */
+@source "../js/**/*.js";
+
+/* Font */
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Custom sidebar animation */
+#sidebar-shell {
+    width: 260px;
+    height: 100vh;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    transition: width 350ms cubic-bezier(.22, 1, .36, 1);
+}
+
+#sidebar-shell.collapsed {
+    width: 68px;
+}
+
+.sidebar-layer {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    transition:
+        opacity 250ms ease,
+        transform 350ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.sidebar-expanded {
+    width: 260px;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.sidebar-collapsed {
+    width: 68px;
+    opacity: 0;
+    transform: translateX(-8px);
+    pointer-events: none;
+    visibility: hidden;
+}
+
+#sidebar-shell.collapsed .sidebar-expanded {
+    opacity: 0;
+    transform: translateX(-8px);
+    pointer-events: none;
+    visibility: hidden;
+}
+
+#sidebar-shell.collapsed .sidebar-collapsed {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+}
+
+#main-content {
+    margin-left: 260px;
+    min-height: 100vh;
+    min-width: 0;
+    transition: margin-left 350ms cubic-bezier(.22, 1, .36, 1);
+}
+
+#sidebar-shell.collapsed ~ #main-content {
+    margin-left: 68px;
+}
+
+.sidebar-link {
+    transition: background 180ms ease, color 180ms ease;
+}
+
+.submenu {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 250ms ease, opacity 200ms ease;
+    opacity: 1;
+}
+
+.submenu-inner {
+    overflow: hidden;
+}
+
+.submenu.closed {
+    grid-template-rows: 0fr;
+    opacity: 0;
+}
+
+.chevron {
+    transition: transform 250ms ease;
+}
+
+.chevron.rotated {
+    transform: rotate(180deg);
+}
+
+@media (max-height: 850px) {
+    .sidebar-expanded {
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+    }
+
+    .sidebar-logo {
+        margin-bottom: 12px !important;
+    }
+
+    .sidebar-search {
+        margin-bottom: 12px !important;
+    }
+
+    .sidebar-link {
+        padding-top: 7px !important;
+        padding-bottom: 7px !important;
+    }
+
+    .sidebar-divider {
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+    }
+}
+
+@media (max-height: 700px) {
+    .sidebar-expanded {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+
+    .sidebar-logo {
+        margin-bottom: 8px !important;
+    }
+
+    .sidebar-search {
+        margin-bottom: 8px !important;
+    }
+
+    .sidebar-link {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
 }
