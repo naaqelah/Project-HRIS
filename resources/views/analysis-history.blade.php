@@ -90,21 +90,22 @@
                 justify-between gap-3">
 
         <div>
-            <h2 class="text-xl font-bold text-[#21172F]">
+            <h2 class="text-xl font-bold text-[#14243A]">
                 Analysis History
             </h2>
 
-            <p class="text-sm text-[#9589A4] mt-1">
+            <p class="text-sm text-[#718096] mt-1">
                 Manage and review all previously analyzed CVs.
             </p>
         </div>
 
+        {{-- BUTTON NEW ANALYSIS --}}
+
         <a href="{{ route('cv-reviewer.new-analysis') }}"
            class="inline-flex items-center justify-center gap-2
-                  px-4 py-2.5 rounded-xl bg-[#8751E8]
-                  hover:bg-[#7540D5] text-white text-sm
-                  font-semibold transition-all shadow-md
-                  shadow-purple-200">
+                  px-5 py-2.5 rounded-xl bg-blue-600
+                  hover:bg-blue-700 text-white text-sm
+                  font-semibold transition-all shadow-md">
 
             <svg class="w-4 h-4" viewBox="0 0 24 24"
                  fill="none" stroke="currentColor" stroke-width="2">
@@ -123,17 +124,17 @@
 
         {{-- TOTAL --}}
 
-        <div class="bg-white border border-[#ECE7F1]
+        <div class="bg-white border border-[#E2E8F0]
                     rounded-2xl p-4">
 
             <div class="flex justify-between items-start">
 
                 <div>
-                    <p class="text-xs text-[#9589A4] font-medium">
+                    <p class="text-xs text-[#718096] font-medium">
                         Total CV Analyzed
                     </p>
 
-                    <h3 class="text-2xl font-bold text-[#21172F] mt-2">
+                    <h3 class="text-2xl font-bold text-[#14243A] mt-2">
                         248
                     </h3>
 
@@ -142,9 +143,9 @@
                     </p>
                 </div>
 
-                <div class="w-10 h-10 rounded-xl bg-purple-50
+                <div class="w-10 h-10 rounded-xl bg-blue-50
                             flex items-center justify-center
-                            text-[#8751E8]">
+                            text-blue-600">
 
                     <svg class="w-5 h-5" viewBox="0 0 24 24"
                          fill="none" stroke="currentColor"
@@ -161,17 +162,17 @@
 
         {{-- HIGHLY MATCHED --}}
 
-        <div class="bg-white border border-[#ECE7F1]
+        <div class="bg-white border border-[#E2E8F0]
                     rounded-2xl p-4">
 
             <div class="flex justify-between items-start">
 
                 <div>
-                    <p class="text-xs text-[#9589A4] font-medium">
+                    <p class="text-xs text-[#718096] font-medium">
                         Highly Matched
                     </p>
 
-                    <h3 class="text-2xl font-bold text-[#21172F] mt-2">
+                    <h3 class="text-2xl font-bold text-[#14243A] mt-2">
                         86
                     </h3>
 
@@ -197,17 +198,17 @@
 
         {{-- MATCHED --}}
 
-        <div class="bg-white border border-[#ECE7F1]
+        <div class="bg-white border border-[#E2E8F0]
                     rounded-2xl p-4">
 
             <div class="flex justify-between items-start">
 
                 <div>
-                    <p class="text-xs text-[#9589A4] font-medium">
+                    <p class="text-xs text-[#718096] font-medium">
                         Matched
                     </p>
 
-                    <h3 class="text-2xl font-bold text-[#21172F] mt-2">
+                    <h3 class="text-2xl font-bold text-[#14243A] mt-2">
                         112
                     </h3>
 
@@ -234,17 +235,17 @@
 
         {{-- LOW MATCH --}}
 
-        <div class="bg-white border border-[#ECE7F1]
+        <div class="bg-white border border-[#E2E8F0]
                     rounded-2xl p-4">
 
             <div class="flex justify-between items-start">
 
                 <div>
-                    <p class="text-xs text-[#9589A4] font-medium">
+                    <p class="text-xs text-[#718096] font-medium">
                         Low Match
                     </p>
 
-                    <h3 class="text-2xl font-bold text-[#21172F] mt-2">
+                    <h3 class="text-2xl font-bold text-[#14243A] mt-2">
                         50
                     </h3>
 
@@ -273,27 +274,27 @@
 
     {{-- HISTORY TABLE CARD --}}
 
-    <div class="bg-white border border-[#ECE7F1]
+    <div class="bg-white border border-[#E2E8F0]
                 rounded-2xl overflow-hidden">
 
         {{-- TABLE HEADER --}}
 
-        <div class="p-5 border-b border-[#ECE7F1]">
+        <div class="p-5 border-b border-[#E2E8F0]">
 
             <div class="flex flex-col lg:flex-row
                         lg:items-center justify-between gap-4">
 
                 <div>
-                    <h3 class="text-base font-bold text-[#21172F]">
+                    <h3 class="text-base font-bold text-[#14243A]">
                         Analysis Records
                     </h3>
 
-                    <p class="text-xs text-[#9589A4] mt-1">
+                    <p class="text-xs text-[#718096] mt-1">
                         View and manage your candidate analysis records.
                     </p>
                 </div>
 
-                <span class="text-xs text-[#9589A4]">
+                <span class="text-xs text-[#718096]">
                     Showing <strong id="result-count">6</strong> records
                 </span>
 
@@ -311,8 +312,8 @@
 
                     <svg class="absolute left-3 top-1/2
                                 -translate-y-1/2 w-4 h-4
-                                text-[#9589A4]"
-                         viewBox="0 0 24 24" fill="none"
+                                text-[#718096]"
+                         viewBox="0 0 24 24" fill="none
                          stroke="currentColor" stroke-width="1.8">
                         <circle cx="11" cy="11" r="7"/>
                         <path d="m20 20-4-4"/>
@@ -322,10 +323,10 @@
                            id="searchInput"
                            placeholder="Search candidate..."
                            class="w-full h-10 pl-9 pr-3
-                                  rounded-xl border border-[#ECE7F1]
+                                  rounded-xl border border-[#E2E8F0]
                                   text-xs outline-none
-                                  focus:border-[#8751E8]
-                                  focus:ring-2 focus:ring-purple-100
+                                  focus:border-blue-500
+                                  focus:ring-2 focus:ring-blue-100
                                   transition">
                 </div>
 
@@ -334,9 +335,9 @@
 
                 <select id="positionFilter"
                         class="w-full h-10 px-3 rounded-xl
-                               border border-[#ECE7F1]
-                               text-xs text-[#665B72]
-                               outline-none focus:border-[#8751E8]">
+                               border border-[#E2E8F0]
+                               text-xs text-[#526174]
+                               outline-none focus:border-blue-500">
 
                     <option value="">All Positions</option>
                     <option value="UI/UX Designer">UI/UX Designer</option>
@@ -351,9 +352,9 @@
 
                 <select id="statusFilter"
                         class="w-full h-10 px-3 rounded-xl
-                               border border-[#ECE7F1]
-                               text-xs text-[#665B72]
-                               outline-none focus:border-[#8751E8]">
+                               border border-[#E2E8F0]
+                               text-xs text-[#526174]
+                               outline-none focus:border-blue-500">
 
                     <option value="">All Status</option>
                     <option value="Highly Matched">Highly Matched</option>
@@ -368,9 +369,9 @@
                 <input type="date"
                        id="dateFilter"
                        class="w-full h-10 px-3 rounded-xl
-                              border border-[#ECE7F1]
-                              text-xs text-[#665B72]
-                              outline-none focus:border-[#8751E8]">
+                              border border-[#E2E8F0]
+                              text-xs text-[#526174]
+                              outline-none focus:border-blue-500">
 
             </div>
 
@@ -379,8 +380,8 @@
 
                 <button type="button"
                         onclick="resetFilters()"
-                        class="text-xs font-semibold text-[#8751E8]
-                               hover:text-[#7540D5]">
+                        class="text-xs font-semibold text-blue-600
+                               hover:text-blue-700">
 
                     Reset Filters
 
@@ -397,10 +398,10 @@
 
             <table class="w-full text-left min-w-[850px]">
 
-                <thead class="bg-[#FAF9FC]">
+                <thead class="bg-[#F5F8FC]">
 
                     <tr class="text-[11px] uppercase
-                               tracking-wider text-[#9589A4]">
+                               tracking-wider text-[#718096]">
 
                         <th class="px-5 py-4 font-semibold">
                             Candidate
@@ -432,7 +433,7 @@
 
 
                 <tbody id="historyTable"
-                       class="divide-y divide-[#F0ECF4]">
+                       class="divide-y divide-[#E8EDF4]">
 
                     @foreach($histories as $item)
 
@@ -450,7 +451,7 @@
                                     : 'bg-red-50 text-red-600');
                         @endphp
 
-                        <tr class="history-row hover:bg-[#FAF9FC]
+                        <tr class="history-row hover:bg-[#F5F8FC]
                                    transition-colors"
                             data-name="{{ strtolower($item['name']) }}"
                             data-position="{{ $item['position'] }}"
@@ -464,7 +465,7 @@
                                 <div class="flex items-center gap-3">
 
                                     <div class="w-9 h-9 rounded-full
-                                                bg-purple-100 text-[#8751E8]
+                                                bg-blue-100 text-blue-700
                                                 flex items-center justify-center
                                                 text-xs font-bold shrink-0">
 
@@ -474,11 +475,11 @@
 
                                     <div>
                                         <p class="text-xs font-semibold
-                                                  text-[#21172F]">
+                                                  text-[#14243A]">
                                             {{ $item['name'] }}
                                         </p>
 
-                                        <p class="text-[10px] text-[#9589A4] mt-1">
+                                        <p class="text-[10px] text-[#718096] mt-1">
                                             {{ $item['email'] }}
                                         </p>
                                     </div>
@@ -492,7 +493,7 @@
 
                             <td class="px-4 py-4">
 
-                                <p class="text-xs font-medium text-[#51465F]">
+                                <p class="text-xs font-medium text-[#33445B]">
                                     {{ $item['position'] }}
                                 </p>
 
@@ -503,7 +504,7 @@
 
                             <td class="px-4 py-4">
 
-                                <p class="text-xs text-[#665B72]">
+                                <p class="text-xs text-[#526174]">
                                     {{ \Carbon\Carbon::parse($item['date'])->format('d M Y') }}
                                 </p>
 
@@ -520,9 +521,9 @@
                                         {{ $item['score'] }}%
                                     </span>
 
-                                    <div class="w-16 h-1.5 rounded-full bg-[#F0ECF4] overflow-hidden">
+                                    <div class="w-16 h-1.5 rounded-full bg-[#E8EDF4] overflow-hidden">
 
-                                        <div class="h-full rounded-full bg-[#8751E8]"
+                                        <div class="h-full rounded-full bg-blue-600"
                                              style="width: {{ $item['score'] }}%">
                                         </div>
 
@@ -566,8 +567,8 @@
                                         class="inline-flex items-center gap-1.5
                                                px-3 py-2 rounded-lg
                                                text-[11px] font-semibold
-                                               text-[#8751E8] bg-purple-50
-                                               hover:bg-[#8751E8]
+                                               text-blue-700 bg-blue-50
+                                               hover:bg-blue-600
                                                hover:text-white transition">
 
                                     View Details
@@ -596,8 +597,8 @@
                             <div class="flex flex-col items-center">
 
                                 <div class="w-12 h-12 rounded-full
-                                            bg-purple-50 flex items-center
-                                            justify-center text-[#8751E8]">
+                                            bg-blue-50 flex items-center
+                                            justify-center text-blue-600">
 
                                     <svg class="w-6 h-6"
                                          viewBox="0 0 24 24"
@@ -610,11 +611,11 @@
                                 </div>
 
                                 <p class="text-sm font-semibold
-                                          text-[#21172F] mt-3">
+                                          text-[#14243A] mt-3">
                                     No records found
                                 </p>
 
-                                <p class="text-xs text-[#9589A4] mt-1">
+                                <p class="text-xs text-[#718096] mt-1">
                                     Try adjusting your search or filters.
                                 </p>
 
@@ -633,14 +634,14 @@
 
         {{-- TABLE FOOTER --}}
 
-        <div class="px-5 py-4 border-t border-[#ECE7F1]
+        <div class="px-5 py-4 border-t border-[#E2E8F0]
                     flex items-center justify-between">
 
-            <p class="text-[11px] text-[#9589A4]">
+            <p class="text-[11px] text-[#718096]">
                 Demo data · 6 records
             </p>
 
-            <p class="text-[11px] text-[#9589A4]">
+            <p class="text-[11px] text-[#718096]">
                 Page 1 of 1
             </p>
 
@@ -664,22 +665,22 @@
 
         {{-- MODAL HEADER --}}
 
-        <div class="px-5 py-4 border-b border-[#ECE7F1]
+        <div class="px-5 py-4 border-b border-[#E2E8F0]
                     flex justify-between items-center">
 
             <div>
-                <h3 class="text-base font-bold text-[#21172F]">
+                <h3 class="text-base font-bold text-[#14243A]">
                     Candidate Analysis
                 </h3>
 
-                <p class="text-xs text-[#9589A4] mt-1">
+                <p class="text-xs text-[#718096] mt-1">
                     Analysis result overview
                 </p>
             </div>
 
             <button onclick="closeDetail()"
-                    class="w-8 h-8 rounded-lg hover:bg-[#F5F1FA]
-                           text-[#9589A4] text-xl">
+                    class="w-8 h-8 rounded-lg hover:bg-[#F5F8FC]
+                           text-[#718096] text-xl">
 
                 &times;
 
@@ -695,18 +696,18 @@
             <div class="flex items-center gap-3">
 
                 <div id="detail-avatar"
-                     class="w-12 h-12 rounded-full bg-purple-100
-                            text-[#8751E8] flex items-center
+                     class="w-12 h-12 rounded-full bg-blue-100
+                            text-blue-700 flex items-center
                             justify-center font-bold text-sm">
                 </div>
 
                 <div>
                     <h4 id="detail-name"
-                        class="text-sm font-bold text-[#21172F]">
+                        class="text-sm font-bold text-[#14243A]">
                     </h4>
 
                     <p id="detail-email"
-                       class="text-xs text-[#9589A4] mt-1">
+                       class="text-xs text-[#718096] mt-1">
                     </p>
                 </div>
 
@@ -715,43 +716,43 @@
 
             <div class="grid grid-cols-2 gap-3">
 
-                <div class="bg-[#FAF9FC] rounded-xl p-3">
-                    <p class="text-[10px] text-[#9589A4]">
+                <div class="bg-[#F5F8FC] rounded-xl p-3">
+                    <p class="text-[10px] text-[#718096]">
                         Applied Position
                     </p>
 
                     <p id="detail-position"
-                       class="text-xs font-semibold text-[#21172F] mt-2">
+                       class="text-xs font-semibold text-[#14243A] mt-2">
                     </p>
                 </div>
 
-                <div class="bg-[#FAF9FC] rounded-xl p-3">
-                    <p class="text-[10px] text-[#9589A4]">
+                <div class="bg-[#F5F8FC] rounded-xl p-3">
+                    <p class="text-[10px] text-[#718096]">
                         Experience
                     </p>
 
                     <p id="detail-experience"
-                       class="text-xs font-semibold text-[#21172F] mt-2">
+                       class="text-xs font-semibold text-[#14243A] mt-2">
                     </p>
                 </div>
 
-                <div class="bg-[#FAF9FC] rounded-xl p-3">
-                    <p class="text-[10px] text-[#9589A4]">
+                <div class="bg-[#F5F8FC] rounded-xl p-3">
+                    <p class="text-[10px] text-[#718096]">
                         Analysis ID
                     </p>
 
                     <p id="detail-id"
-                       class="text-xs font-semibold text-[#21172F] mt-2">
+                       class="text-xs font-semibold text-[#14243A] mt-2">
                     </p>
                 </div>
 
-                <div class="bg-[#FAF9FC] rounded-xl p-3">
-                    <p class="text-[10px] text-[#9589A4]">
+                <div class="bg-[#F5F8FC] rounded-xl p-3">
+                    <p class="text-[10px] text-[#718096]">
                         Analysis Date
                     </p>
 
                     <p id="detail-date"
-                       class="text-xs font-semibold text-[#21172F] mt-2">
+                       class="text-xs font-semibold text-[#14243A] mt-2">
                     </p>
                 </div>
 
@@ -760,22 +761,22 @@
 
             {{-- MATCH SCORE --}}
 
-            <div class="bg-purple-50 rounded-xl p-4">
+            <div class="bg-blue-50 rounded-xl p-4">
 
                 <div class="flex justify-between items-center">
 
                     <div>
-                        <p class="text-xs font-semibold text-[#21172F]">
+                        <p class="text-xs font-semibold text-[#14243A]">
                             AI Compatibility Score
                         </p>
 
                         <p id="detail-status"
-                           class="text-[10px] text-[#9589A4] mt-1">
+                           class="text-[10px] text-[#718096] mt-1">
                         </p>
                     </div>
 
                     <h3 id="detail-score"
-                        class="text-3xl font-bold text-[#8751E8]">
+                        class="text-3xl font-bold text-blue-600">
                     </h3>
 
                 </div>
@@ -784,7 +785,7 @@
                             bg-white mt-4 overflow-hidden">
 
                     <div id="detail-progress"
-                         class="h-full bg-[#8751E8] rounded-full"
+                         class="h-full bg-blue-600 rounded-full"
                          style="width: 0%">
                     </div>
 
@@ -792,7 +793,7 @@
 
             </div>
 
-            <p class="text-[10px] text-[#9589A4]">
+            <p class="text-[10px] text-[#718096]">
                 This is demonstration data. Detailed AI evaluation,
                 skill matching, and recommendations will be available
                 after the AI analysis module is implemented.
@@ -803,13 +804,13 @@
 
         {{-- MODAL FOOTER --}}
 
-        <div class="px-5 py-4 border-t border-[#ECE7F1]
+        <div class="px-5 py-4 border-t border-[#E2E8F0]
                     flex justify-end">
 
             <button onclick="closeDetail()"
-                    class="px-4 py-2 rounded-lg bg-[#8751E8]
+                    class="px-4 py-2 rounded-lg bg-blue-600
                            text-white text-xs font-semibold
-                           hover:bg-[#7540D5] transition">
+                           hover:bg-blue-700 transition">
 
                 Close
 

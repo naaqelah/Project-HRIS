@@ -12,17 +12,16 @@
 
     <style>
         :root {
-            --sidebar-dark: #160E24;
-            --sidebar-hover: #281B38;
-            --primary: #8751E8;
-            --primary-light: #F0E8FF;
-            --text-main: #21172F;
-            --text-muted: #9589A4;
-            --border: #ECE7F1;
-            --page-bg: #F7F5FA;
+            --sidebar-dark: #0F172A;
+            --sidebar-hover: #1E293B;
+            --primary: #3666F6;
+            --primary-light: #E0EAFF;
+            --text-main: #0F172A;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
+            --page-bg: #F8FAFC;
             --ease: cubic-bezier(.22, 1, .36, 1);
         }
-
         * {
             box-sizing: border-box;
         }
@@ -128,7 +127,7 @@
             font-size: 24px;
             font-weight: 800;
             color: white;
-            box-shadow: 0 5px 15px rgba(135,81,232,.22);
+            box-shadow: 0 5px 15px rgba(54,102,246,.22);
         }
 
         /* MENU */
@@ -159,7 +158,7 @@
         .sidebar-link.active {
             background: var(--primary);
             color: white;
-            box-shadow: 0 4px 12px rgba(135,81,232,.18);
+            box-shadow: 0 4px 12px rgba(54,102,246,.18);
         }
 
         .sidebar-link svg {
@@ -179,7 +178,7 @@
 
         .sidebar-divider {
             height: 1px;
-            background: #382A47;
+            background: #334155;
             margin: 9px 0;
             flex-shrink: 0;
         }
@@ -280,7 +279,7 @@
             width: 34px;
             height: 34px;
             border-radius: 50%;
-            background: #EDE3FF;
+            background: #E0EAFF;
             color: var(--primary);
             display: flex;
             align-items: center;
@@ -434,7 +433,7 @@
         {{-- SEARCH --}}
 
         <div class="sidebar-search flex items-center gap-3 px-3 h-9
-                    rounded-xl bg-[#241A30] mb-4 shrink-0">
+                    rounded-xl bg-[#1E293B] mb-4 shrink-0">
 
             <svg class="w-4 h-4 text-[#B9AACD] shrink-0"
                  viewBox="0 0 24 24" fill="none"
@@ -518,7 +517,7 @@
 
                         <div class="submenu-inner">
 
-                            <div class="ml-8 pl-4 mt-1 border-l border-[#49365E] space-y-1">
+                            <div class="ml-8 pl-4 mt-1 border-l border-[#334155] space-y-1">
 
                                 <a href="{{ route('cv-reviewer.new-analysis') }}"
                                    class="submenu-link {{ request()->routeIs('cv-reviewer.new-analysis') ? 'active' : '' }}">
@@ -604,8 +603,8 @@
 <a href="{{ route('shortlisted.index') }}"
    class="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all duration-200 select-none
    {{ request()->routeIs('shortlisted.*')
-       ? 'bg-[#8751E8] text-white'
-       : 'text-[#D4C8E0] hover:bg-[#281B38]' }}">
+       ? 'bg-[	#3666F6] text-white'
+       : 'text-[#D4C8E0] hover:bg-[#1E293B]' }}">
 
     <i class="fa-solid fa-user-check w-5 text-center"></i>
 
@@ -635,11 +634,11 @@
 
         {{-- PROFILE BOTTOM --}}
 
-        <div class="mt-auto pt-3 shrink-0 border-t border-[#382A47]">
+        <div class="mt-auto pt-3 shrink-0 border-t border-[#334155]">
 
             <div class="flex items-center gap-3">
 
-                <div class="w-9 h-9 rounded-full bg-[#7254A3]
+                <div class="w-9 h-9 rounded-full bg-[#3666F6]
                             flex items-center justify-center
                             text-xs font-bold shrink-0">
                     HR
@@ -681,13 +680,13 @@
                 title="Expand sidebar"
                 class="w-10 h-10 flex items-center justify-center mb-4">
 
-            <span class="text-3xl font-extrabold text-[#8751E8]">
+            <span class="text-3xl font-extrabold text-[	#3666F6]">
                 T
             </span>
 
         </button>
 
-        <div class="w-9 border-t border-[#ECE7F1] mb-4"></div>
+        <div class="w-9 border-t border-[#E2E8F0] mb-4"></div>
 
 
         {{-- ICON NAVIGATION --}}
@@ -835,7 +834,7 @@
 
         <div class="min-w-0">
 
-            <p class="text-[11px] text-[#9589A4]">
+            <p class="text-[11px] text-[#64748B]">
                 @yield('breadcrumb', 'Workspace / Dashboard')
             </p>
 
@@ -852,7 +851,7 @@
 
             <button class="relative w-9 h-9 flex items-center
                            justify-center rounded-xl text-[#766C80]
-                           hover:bg-[#F5F1FA] transition">
+                           hover:bg-[#EFF6FF] transition">
 
                 <svg class="w-5 h-5" viewBox="0 0 24 24"
                      fill="none" stroke="currentColor"
@@ -862,13 +861,13 @@
                 </svg>
 
                 <span class="absolute top-2 right-2 w-2 h-2
-                             rounded-full bg-[#8751E8]
+                             rounded-full bg-[	#3666F6]
                              border-2 border-white"></span>
 
             </button>
 
 
-            <div class="h-8 w-px bg-[#ECE7F1]"></div>
+            <div class="h-8 w-px bg-[	#E2E8F0]"></div>
 
 
             {{-- USER PROFILE --}}
@@ -881,7 +880,7 @@
                         HR Administrator
                     </p>
 
-                    <p class="text-[10px] text-[#9589A4] mt-0.5">
+                    <p class="text-[10px] text-[#64748B] mt-0.5">
                         Administrator
                     </p>
 

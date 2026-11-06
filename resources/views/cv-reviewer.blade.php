@@ -16,27 +16,27 @@
 
         <div>
             <div class="flex items-center gap-2">
-                <h1 class="text-xl font-bold text-[#21172F]">
+                <h1 class="text-xl font-bold text-[#14243A]">
                     CV Reviewer
                 </h1>
 
-                <span class="px-2 py-1 rounded-full bg-[#F0E8FF]
-                             text-[#8751E8] text-[9px] font-bold">
+                <span class="px-2 py-1 rounded-full bg-blue-100
+                             text-blue-700 text-[9px] font-bold">
                     AI POWERED
                 </span>
             </div>
 
-            <p class="text-xs text-[#9589A4] mt-1">
+            <p class="text-xs text-[#718096] mt-1">
                 Analyze candidate CVs and discover the best talent for your team.
             </p>
         </div>
 
-        <a href="#"
+        <a href="{{ route('cv-reviewer.history') }}"
            class="inline-flex items-center justify-center gap-2
-                  px-4 py-2.5 rounded-xl border border-[#ECE7F1]
-                  bg-white text-[#766C80] text-xs font-semibold
-                  hover:border-[#8751E8] hover:text-[#8751E8]
-                  transition">
+                 px-4 py-2.5 rounded-xl border border-[#3763FF]
+                 bg-[#3763FF] text-white text-xs font-semibold
+                 hover:bg-[#2F55E7] hover:border-[#2F55E7]
+                 transition">
 
             <svg class="w-4 h-4" viewBox="0 0 24 24"
                  fill="none" stroke="currentColor" stroke-width="1.8">
@@ -54,10 +54,10 @@
     <!-- AI INTRODUCTION PANEL -->
 
     <section class="relative overflow-hidden rounded-2xl
-                    bg-[#160E24] text-white">
+                    bg-[#0F172A] text-white">
 
         <div class="absolute -right-12 -top-20 w-64 h-64
-                    rounded-full bg-[#8751E8] opacity-10 blur-3xl">
+                    rounded-full bg-blue-600 opacity-10 blur-3xl">
         </div>
 
         <div class="relative p-5 md:p-7 flex flex-col
@@ -68,10 +68,10 @@
 
                 <div class="flex items-center gap-2 mb-3">
 
-                    <span class="w-2 h-2 bg-[#A77AF4] rounded-full"></span>
+                    <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
 
                     <span class="text-[10px] tracking-widest
-                                 uppercase text-[#C4A7FF] font-semibold">
+                                 uppercase text-blue-300 font-semibold">
                         Intelligent Recruitment System
                     </span>
 
@@ -79,11 +79,11 @@
 
                 <h2 class="text-xl md:text-2xl font-bold leading-snug">
                     Find the Right Talent with
-                    <span class="text-[#A77AF4]">AI-Powered</span>
+                    <span class="text-blue-400">AI-Powered</span>
                     CV Analysis
                 </h2>
 
-                <p class="text-xs text-[#B9AACD] mt-3 leading-relaxed">
+                <p class="text-xs text-slate-300 mt-3 leading-relaxed">
                     Upload a candidate's CV and let AI evaluate their
                     qualifications, skills, and experience against your
                     job requirements.
@@ -95,10 +95,10 @@
             <div class="flex items-center gap-3 shrink-0">
 
                 <div class="w-14 h-14 rounded-2xl
-                            bg-[#2B1B40] border border-[#49365E]
+                            bg-slate-800 border border-slate-700
                             flex items-center justify-center">
 
-                    <svg class="w-7 h-7 text-[#B895FF]"
+                    <svg class="w-7 h-7 text-blue-400"
                          viewBox="0 0 24 24" fill="none"
                          stroke="currentColor" stroke-width="1.5">
 
@@ -116,7 +116,7 @@
                         Smart CV Evaluation
                     </p>
 
-                    <p class="text-[10px] text-[#B9AACD] mt-1">
+                    <p class="text-[10px] text-slate-300 mt-1">
                         Skills · Experience · Education
                     </p>
                 </div>
@@ -138,11 +138,11 @@
             ['number'=>'03','title'=>'AI Analysis','description'=>'Evaluate candidate compatibility','icon'=>'brain-circuit']
         ] as $step)
 
-            <div class="bg-white border border-[#ECE7F1]
+            <div class="bg-white border border-[#E2E8F0]
                         rounded-xl p-4 flex items-center gap-3">
 
-                <div class="w-10 h-10 rounded-xl bg-[#F0E8FF]
-                            text-[#8751E8] flex items-center
+                <div class="w-10 h-10 rounded-xl bg-blue-50
+                            text-blue-600 flex items-center
                             justify-center shrink-0">
 
                     @if($step['number'] === '01')
@@ -169,11 +169,11 @@
                 </div>
 
                 <div class="min-w-0">
-                    <p class="text-xs font-bold text-[#21172F]">
+                    <p class="text-xs font-bold text-[#14243A]">
                         {{ $step['number'] }}. {{ $step['title'] }}
                     </p>
 
-                    <p class="text-[10px] text-[#9589A4] mt-1">
+                    <p class="text-[10px] text-[#718096] mt-1">
                         {{ $step['description'] }}
                     </p>
                 </div>
@@ -193,15 +193,15 @@
         <!-- LEFT: UPLOAD FORM -->
 
         <section class="bg-white rounded-2xl
-                        border border-[#ECE7F1] overflow-hidden">
+                        border border-[#E2E8F0] overflow-hidden">
 
-            <div class="px-5 py-4 border-b border-[#ECE7F1]">
+            <div class="px-5 py-4 border-b border-[#E2E8F0]">
 
-                <h3 class="text-sm font-bold text-[#21172F]">
+                <h3 class="text-sm font-bold text-[#14243A]">
                     New CV Analysis
                 </h3>
 
-                <p class="text-[10px] text-[#9589A4] mt-1">
+                <p class="text-[10px] text-[#718096] mt-1">
                     Complete the information below to start evaluating a candidate.
                 </p>
 
@@ -215,16 +215,16 @@
                 <div>
 
                     <label class="block text-xs font-semibold
-                                  text-[#21172F] mb-2">
+                                  text-[#14243A] mb-2">
                         Select Job Position
                         <span class="text-red-500">*</span>
                     </label>
 
                     <select id="job-position"
-                            class="w-full rounded-xl border border-[#ECE7F1]
-                                   bg-white px-4 py-3 text-xs text-[#766C80]
-                                   outline-none focus:border-[#8751E8]
-                                   focus:ring-2 focus:ring-[#8751E8]/10">
+                            class="w-full rounded-xl border border-[#E2E8F0]
+                                   bg-white px-4 py-3 text-xs text-[#526174]
+                                   outline-none focus:border-blue-500
+                                   focus:ring-2 focus:ring-blue-100">
 
                         <option value="">Choose a job position</option>
                         <option value="UI/UX Designer">UI/UX Designer</option>
@@ -235,7 +235,7 @@
 
                     </select>
 
-                    <p class="text-[10px] text-[#9589A4] mt-2">
+                    <p class="text-[10px] text-[#718096] mt-2">
                         The selected position will be used as the comparison criteria.
                     </p>
 
@@ -248,12 +248,12 @@
 
                     <div class="flex items-center justify-between mb-2">
 
-                        <label class="text-xs font-semibold text-[#21172F]">
+                        <label class="text-xs font-semibold text-[#14243A]">
                             Upload Candidate CV
                             <span class="text-red-500">*</span>
                         </label>
 
-                        <span class="text-[10px] text-[#9589A4]">
+                        <span class="text-[10px] text-[#718096]">
                             Max. 10 MB
                         </span>
 
@@ -265,17 +265,17 @@
                            class="group flex flex-col items-center
                                   justify-center w-full min-h-[220px]
                                   border-2 border-dashed
-                                  border-[#DCD2E8] rounded-2xl
-                                  bg-[#FAF8FD] cursor-pointer
-                                  hover:bg-[#F5F0FF]
-                                  hover:border-[#8751E8]
+                                  border-[#CBD5E1] rounded-2xl
+                                  bg-[#F5F8FC] cursor-pointer
+                                  hover:bg-blue-50
+                                  hover:border-blue-500
                                   transition-all duration-200">
 
                         <div id="upload-placeholder"
                              class="flex flex-col items-center text-center p-5">
 
                             <div class="w-14 h-14 rounded-2xl
-                                        bg-[#F0E8FF] text-[#8751E8]
+                                        bg-blue-50 text-blue-600
                                         flex items-center justify-center
                                         mb-4 group-hover:scale-105
                                         transition-transform">
@@ -283,8 +283,7 @@
                                 <svg class="w-7 h-7"
                                      viewBox="0 0 24 24"
                                      fill="none"
-                                     stroke="currentColor"
-                                     stroke-width="1.6">
+                                     stroke="currentColor" stroke-width="1.6">
 
                                     <path d="M12 16V4m-5 5 5-5 5 5"/>
                                     <path d="M4 16v4h16v-4"/>
@@ -293,18 +292,18 @@
 
                             </div>
 
-                            <p class="text-sm font-bold text-[#21172F]">
+                            <p class="text-sm font-bold text-[#14243A]">
                                 Drop your CV here or
-                                <span class="text-[#8751E8]">
+                                <span class="text-blue-600">
                                     browse files
                                 </span>
                             </p>
 
-                            <p class="text-[10px] text-[#9589A4] mt-2">
+                            <p class="text-[10px] text-[#718096] mt-2">
                                 Supported formats: PDF, DOC, DOCX
                             </p>
 
-                            <p class="text-[10px] text-[#B1A5BE] mt-1">
+                            <p class="text-[10px] text-[#94A3B8] mt-1">
                                 Maximum file size 10 MB
                             </p>
 
@@ -317,11 +316,11 @@
                              class="hidden w-full p-5">
 
                             <div class="flex items-center gap-3
-                                        bg-white border border-[#ECE7F1]
+                                        bg-white border border-[#E2E8F0]
                                         rounded-xl p-4">
 
                                 <div class="w-11 h-11 rounded-xl
-                                            bg-[#F0E8FF] text-[#8751E8]
+                                            bg-blue-50 text-blue-600
                                             flex items-center justify-center">
 
                                     <svg class="w-5 h-5"
@@ -340,11 +339,11 @@
                                 <div class="flex-1 min-w-0">
 
                                     <p id="file-name"
-                                       class="text-xs font-bold text-[#21172F] truncate">
+                                       class="text-xs font-bold text-[#14243A] truncate">
                                     </p>
 
                                     <p id="file-size"
-                                       class="text-[10px] text-[#9589A4] mt-1">
+                                       class="text-[10px] text-[#718096] mt-1">
                                     </p>
 
                                     <p class="text-[10px] text-[#16A36A] mt-1">
@@ -357,7 +356,7 @@
                                         id="remove-file"
                                         class="w-8 h-8 rounded-lg
                                                hover:bg-red-50
-                                               text-[#9589A4]
+                                               text-[#718096]
                                                hover:text-red-500
                                                flex items-center justify-center">
 
@@ -394,9 +393,9 @@
                 <div>
 
                     <label class="block text-xs font-semibold
-                                  text-[#21172F] mb-2">
+                                  text-[#14243A] mb-2">
                         Additional Notes
-                        <span class="text-[#9589A4] font-normal">
+                        <span class="text-[#718096] font-normal">
                             (Optional)
                         </span>
                     </label>
@@ -404,11 +403,11 @@
                     <textarea id="additional-notes"
                               rows="3"
                               placeholder="Add additional context or specific requirements for this candidate..."
-                              class="w-full rounded-xl border border-[#ECE7F1]
+                              class="w-full rounded-xl border border-[#E2E8F0]
                                      bg-white px-4 py-3 text-xs
-                                     text-[#766C80] outline-none
-                                     resize-none focus:border-[#8751E8]
-                                     focus:ring-2 focus:ring-[#8751E8]/10"></textarea>
+                                     text-[#526174] outline-none
+                                     resize-none focus:border-blue-500
+                                     focus:ring-2 focus:ring-blue-100"></textarea>
 
                 </div>
 
@@ -422,17 +421,17 @@
 
                 <!-- SUBMIT -->
 
-                <div class="pt-4 border-t border-[#ECE7F1]">
+                <div class="pt-4 border-t border-[#E2E8F0]">
 
                     <button type="button"
                             id="analyze-button"
                             class="w-full flex items-center
                                    justify-center gap-2
-                                   bg-[#8751E8] hover:bg-[#7540D5]
+                                   bg-blue-600 hover:bg-blue-700
                                    text-white rounded-xl
                                    py-3.5 text-xs font-bold
                                    transition-all duration-200
-                                   hover:shadow-lg hover:shadow-purple-200">
+                                   hover:shadow-lg">
 
                         <svg class="w-4 h-4" viewBox="0 0 24 24"
                              fill="none" stroke="currentColor"
@@ -449,7 +448,7 @@
                     </button>
 
                     <p class="text-center text-[10px]
-                              text-[#A99BB9] mt-3">
+                              text-[#94A3B8] mt-3">
                         Your candidate documents are handled securely.
                     </p>
 
@@ -468,25 +467,25 @@
             <!-- JOB REQUIREMENTS -->
 
             <section class="bg-white rounded-2xl
-                            border border-[#ECE7F1] overflow-hidden">
+                            border border-[#E2E8F0] overflow-hidden">
 
-                <div class="p-4 border-b border-[#ECE7F1]">
+                <div class="p-4 border-b border-[#E2E8F0]">
 
                     <div class="flex items-center justify-between">
 
-                        <h3 class="text-xs font-bold text-[#21172F]">
+                        <h3 class="text-xs font-bold text-[#14243A]">
                             Position Requirements
                         </h3>
 
                         <span class="text-[9px] px-2 py-1
-                                     bg-[#F0E8FF] text-[#8751E8]
+                                     bg-blue-50 text-blue-700
                                      rounded-full font-semibold">
                             JOB CRITERIA
                         </span>
 
                     </div>
 
-                    <p class="text-[10px] text-[#9589A4] mt-1">
+                    <p class="text-[10px] text-[#718096] mt-1">
                         Requirements will follow the selected position.
                     </p>
 
@@ -499,7 +498,7 @@
                                 text-center py-7">
 
                         <div class="w-12 h-12 rounded-2xl
-                                    bg-[#F0E8FF] text-[#8751E8]
+                                    bg-blue-50 text-blue-600
                                     flex items-center justify-center">
 
                             <svg class="w-6 h-6"
@@ -515,11 +514,11 @@
                         </div>
 
                         <p class="text-xs font-semibold
-                                  text-[#21172F] mt-3">
+                                  text-[#14243A] mt-3">
                             No Position Selected
                         </p>
 
-                        <p class="text-[10px] text-[#9589A4]
+                        <p class="text-[10px] text-[#718096]
                                   max-w-[220px] mt-1 leading-relaxed">
                             Select a job position to view its requirements and evaluation criteria.
                         </p>
@@ -533,13 +532,13 @@
 
             <!-- HOW IT WORKS -->
 
-            <section class="bg-[#160E24] rounded-2xl
+            <section class="bg-[#0F172A] rounded-2xl
                             p-5 text-white">
 
                 <div class="flex items-center gap-2 mb-4">
 
                     <div class="w-8 h-8 rounded-lg
-                                bg-[#38244F] text-[#C4A7FF]
+                                bg-slate-800 text-blue-400
                                 flex items-center justify-center">
 
                         <svg class="w-4 h-4" viewBox="0 0 24 24"
@@ -565,7 +564,7 @@
                     <div class="flex gap-3">
 
                         <span class="w-6 h-6 rounded-full
-                                     bg-[#8751E8] text-white
+                                     bg-blue-600 text-white
                                      flex items-center justify-center
                                      text-[10px] font-bold shrink-0">
                             1
@@ -576,7 +575,7 @@
                                 CV Extraction
                             </p>
 
-                            <p class="text-[10px] text-[#B9AACD] mt-1">
+                            <p class="text-[10px] text-slate-300 mt-1">
                                 Extract candidate information and qualifications.
                             </p>
                         </div>
@@ -587,7 +586,7 @@
                     <div class="flex gap-3">
 
                         <span class="w-6 h-6 rounded-full
-                                     bg-[#8751E8] text-white
+                                     bg-blue-600 text-white
                                      flex items-center justify-center
                                      text-[10px] font-bold shrink-0">
                             2
@@ -598,7 +597,7 @@
                                 Skills Evaluation
                             </p>
 
-                            <p class="text-[10px] text-[#B9AACD] mt-1">
+                            <p class="text-[10px] text-slate-300 mt-1">
                                 Compare candidate skills with job requirements.
                             </p>
                         </div>
@@ -609,7 +608,7 @@
                     <div class="flex gap-3">
 
                         <span class="w-6 h-6 rounded-full
-                                     bg-[#8751E8] text-white
+                                     bg-blue-600 text-white
                                      flex items-center justify-center
                                      text-[10px] font-bold shrink-0">
                             3
@@ -620,7 +619,7 @@
                                 Match Score
                             </p>
 
-                            <p class="text-[10px] text-[#B9AACD] mt-1">
+                            <p class="text-[10px] text-slate-300 mt-1">
                                 Generate compatibility score and evaluation insights.
                             </p>
                         </div>
@@ -635,9 +634,9 @@
             <!-- SUPPORTED FILES -->
 
             <section class="bg-white rounded-2xl
-                            border border-[#ECE7F1] p-4">
+                            border border-[#E2E8F0] p-4">
 
-                <h3 class="text-xs font-bold text-[#21172F] mb-3">
+                <h3 class="text-xs font-bold text-[#14243A] mb-3">
                     Supported Documents
                 </h3>
 
@@ -651,10 +650,10 @@
                     </div>
 
                     <div class="flex-1">
-                        <p class="text-xs font-semibold text-[#21172F]">
+                        <p class="text-xs font-semibold text-[#14243A]">
                             PDF Document
                         </p>
-                        <p class="text-[10px] text-[#9589A4]">
+                        <p class="text-[10px] text-[#718096]">
                             Recommended format
                         </p>
                     </div>
@@ -668,17 +667,17 @@
                 <div class="flex items-center gap-3 mt-3">
 
                     <div class="w-10 h-10 rounded-lg
-                                bg-blue-50 text-blue-500
+                                bg-blue-50 text-blue-600
                                 flex items-center justify-center
                                 text-xs font-bold">
                         DOC
                     </div>
 
                     <div class="flex-1">
-                        <p class="text-xs font-semibold text-[#21172F]">
+                        <p class="text-xs font-semibold text-[#14243A]">
                             Word Document
                         </p>
-                        <p class="text-[10px] text-[#9589A4]">
+                        <p class="text-[10px] text-[#718096]">
                             DOC and DOCX
                         </p>
                     </div>
@@ -698,10 +697,10 @@
 
     <!-- DEMO NOTICE -->
 
-    <div class="bg-[#F0E8FF] border border-[#E4D6FF]
+    <div class="bg-blue-50 border border-blue-100
                 rounded-xl p-4 flex gap-3">
 
-        <svg class="w-5 h-5 text-[#8751E8] shrink-0"
+        <svg class="w-5 h-5 text-blue-600 shrink-0"
              viewBox="0 0 24 24" fill="none"
              stroke="currentColor" stroke-width="1.8">
 
@@ -711,11 +710,11 @@
         </svg>
 
         <div>
-            <p class="text-xs font-bold text-[#60418D]">
+            <p class="text-xs font-bold text-blue-800">
                 Development Preview
             </p>
 
-            <p class="text-[10px] text-[#766C80] mt-1 leading-relaxed">
+            <p class="text-[10px] text-[#526174] mt-1 leading-relaxed">
                 This page currently provides the CV upload interface and
                 position selection preview. AI processing, document extraction,
                 and database storage will be implemented in the next development stage.
@@ -798,6 +797,8 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
 
+    // POSITION REQUIREMENTS DISPLAY
+
     jobPosition.addEventListener('change', function () {
 
         const selected = requirements[this.value];
@@ -806,10 +807,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             requirementsContent.innerHTML = `
                 <div class="text-center py-7">
-                    <p class="text-xs font-semibold text-[#21172F]">
+                    <p class="text-xs font-semibold text-[#14243A]">
                         No Position Selected
                     </p>
-                    <p class="text-[10px] text-[#9589A4] mt-2">
+                    <p class="text-[10px] text-[#718096] mt-2">
                         Select a position to see its requirements.
                     </p>
                 </div>
@@ -826,11 +827,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div>
                     <span class="text-[9px] font-semibold
                                  uppercase tracking-wider
-                                 text-[#9589A4]">
+                                 text-[#718096]">
                         Department
                     </span>
 
-                    <p class="text-sm font-bold text-[#21172F] mt-1">
+                    <p class="text-sm font-bold text-[#14243A] mt-1">
                         ${selected.department}
                     </p>
                 </div>
@@ -838,11 +839,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div>
                     <span class="text-[9px] font-semibold
                                  uppercase tracking-wider
-                                 text-[#9589A4]">
+                                 text-[#718096]">
                         Required Experience
                     </span>
 
-                    <p class="text-xs font-semibold text-[#21172F] mt-1">
+                    <p class="text-xs font-semibold text-[#14243A] mt-1">
                         ${selected.experience}
                     </p>
                 </div>
@@ -850,11 +851,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div>
                     <span class="text-[9px] font-semibold
                                  uppercase tracking-wider
-                                 text-[#9589A4]">
+                                 text-[#718096]">
                         Education
                     </span>
 
-                    <p class="text-xs font-semibold text-[#21172F] mt-1">
+                    <p class="text-xs font-semibold text-[#14243A] mt-1">
                         ${selected.education}
                     </p>
                 </div>
@@ -862,7 +863,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div>
                     <span class="text-[9px] font-semibold
                                  uppercase tracking-wider
-                                 text-[#9589A4]">
+                                 text-[#718096]">
                         Required Skills
                     </span>
 
@@ -870,8 +871,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         ${selected.skills.map(skill => `
                             <span class="px-2.5 py-1.5
-                                         rounded-lg bg-[#F0E8FF]
-                                         text-[#8751E8]
+                                         rounded-lg bg-blue-50
+                                         text-blue-700
                                          text-[10px] font-semibold">
                                 ${skill}
                             </span>
@@ -880,9 +881,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </div>
 
-                <div class="p-3 bg-[#FAF9FC] rounded-xl">
+                <div class="p-3 bg-[#F5F8FC] rounded-xl">
 
-                    <p class="text-[10px] text-[#9589A4] leading-relaxed">
+                    <p class="text-[10px] text-[#718096] leading-relaxed">
                         ${selected.description}
                     </p>
 
@@ -1002,7 +1003,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             event.preventDefault();
 
-            uploadArea.classList.add('border-[#8751E8]', 'bg-[#F5F0FF]');
+            uploadArea.classList.add('border-blue-500', 'bg-blue-50');
 
         });
 
@@ -1015,7 +1016,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             event.preventDefault();
 
-            uploadArea.classList.remove('border-[#8751E8]', 'bg-[#F5F0FF]');
+            uploadArea.classList.remove('border-blue-500', 'bg-blue-50');
 
         });
 

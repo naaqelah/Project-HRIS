@@ -22,7 +22,7 @@
 
         <div class="flex flex-wrap items-center gap-2">
             <select id="periodFilter"
-                class="rounded-lg border border-[#ECE7F1] bg-white px-3 py-2 text-sm text-[#21172F] outline-none focus:border-[#8751E8]">
+                class="rounded-lg border border-[#ECE7F1] bg-white px-3 py-2 text-sm text-[#21172F] outline-none focus:border-[#3666F6]">
                 <option value="This Month">This Month</option>
                 <option value="Last Month">Last Month</option>
                 <option value="Last 3 Months">Last 3 Months</option>
@@ -30,7 +30,7 @@
             </select>
 
             <button onclick="exportReport()"
-                class="rounded-lg bg-[#8751E8] px-4 py-2 text-sm font-medium text-white hover:bg-[#7440D0] transition">
+                class="rounded-lg bg-[#3666F6] px-4 py-2 text-sm font-medium text-white hover:bg-[#2851D8] transition">
                 <i class="fa-solid fa-download mr-2"></i>
                 Export Report
             </button>
@@ -38,9 +38,9 @@
     </div>
 
     {{-- Demo Notice --}}
-    <div class="flex items-center gap-2 rounded-lg border border-[#E8DDFB] bg-[#F8F4FF] px-4 py-3">
-        <i class="fa-solid fa-circle-info text-[#8751E8]"></i>
-        <p class="text-xs text-[#725A91]">
+    <div class="flex items-center gap-2 rounded-lg border border-[#C7D8FF] bg-[#EFF6FF] px-4 py-3">
+        <i class="fa-solid fa-circle-info text-[#3666F6]"></i>
+        <p class="text-xs text-[#475569]">
             This page currently uses demo data. Live database reporting will be connected later.
         </p>
     </div>
@@ -51,7 +51,7 @@
         <div class="rounded-xl border border-[#ECE7F1] bg-white p-5">
             <div class="flex items-center justify-between">
                 <p class="text-sm text-[#9589A4]">Total CV Analyzed</p>
-                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-[#F2EAFF] text-[#8751E8]">
+                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-[#E0EAFF] text-[#3666F6]">
                     <i class="fa-solid fa-file-lines"></i>
                 </div>
             </div>
@@ -64,7 +64,7 @@
         <div class="rounded-xl border border-[#ECE7F1] bg-white p-5">
             <div class="flex items-center justify-between">
                 <p class="text-sm text-[#9589A4]">Average Match Score</p>
-                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-[#F2EAFF] text-[#8751E8]">
+                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-[#E0EAFF] text-[#3666F6]">
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
             </div>
@@ -77,7 +77,7 @@
         <div class="rounded-xl border border-[#ECE7F1] bg-white p-5">
             <div class="flex items-center justify-between">
                 <p class="text-sm text-[#9589A4]">Shortlisted Candidates</p>
-                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-[#F2EAFF] text-[#8751E8]">
+                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-[#E0EAFF] text-[#3666F6]">
                     <i class="fa-solid fa-user-check"></i>
                 </div>
             </div>
@@ -88,7 +88,7 @@
         <div class="rounded-xl border border-[#ECE7F1] bg-white p-5">
             <div class="flex items-center justify-between">
                 <p class="text-sm text-[#9589A4]">Active Positions</p>
-                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-[#F2EAFF] text-[#8751E8]">
+                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-[#E0EAFF] text-[#3666F6]">
                     <i class="fa-solid fa-briefcase"></i>
                 </div>
             </div>
@@ -160,7 +160,7 @@
 
         <div class="overflow-x-auto">
             <table class="w-full text-left text-sm">
-                <thead class="bg-[#FAF9FC] text-xs text-[#9589A4]">
+                <thead class="bg-[#F8FAFC] text-xs text-[#9589A4]">
                     <tr>
                         <th class="px-5 py-4 font-medium">Job Position</th>
                         <th class="px-5 py-4 font-medium">Total Candidates</th>
@@ -170,7 +170,7 @@
                     </tr>
                 </thead>
 
-                <tbody class="divide-y divide-[#F0ECF3] text-[#51465F]">
+                <tbody class="divide-y divide-[#E2E8F0] text-[#334155]">
                     @php
                         $positions = [
                             ['title' => 'UI/UX Designer', 'total' => 58, 'score' => 86, 'shortlisted' => 12, 'status' => 'Active'],
@@ -182,7 +182,7 @@
                     @endphp
 
                     @foreach ($positions as $position)
-                        <tr class="hover:bg-[#FCFAFF]">
+                        <tr class="hover:bg-[#EFF6FF]">
                             <td class="whitespace-nowrap px-5 py-4 font-medium text-[#21172F]">
                                 {{ $position['title'] }}
                             </td>
@@ -190,8 +190,8 @@
                             <td class="px-5 py-4">
                                 <div class="flex items-center gap-3">
                                     <span class="w-10">{{ $position['score'] }}%</span>
-                                    <div class="h-1.5 w-20 overflow-hidden rounded-full bg-[#EEE9F4]">
-                                        <div class="h-full rounded-full bg-[#8751E8]"
+                                    <div class="h-1.5 w-20 overflow-hidden rounded-full bg-[#E2E8F0]">
+                                        <div class="h-full rounded-full bg-[#3666F6]"
                                             style="width: {{ $position['score'] }}%">
                                         </div>
                                     </div>
@@ -231,7 +231,7 @@
             datasets: [{
                 label: 'Candidates',
                 data: [24, 52, 98, 74],
-                backgroundColor: ['#D9C7F8', '#B99AEF', '#9869E8', '#7540CE'],
+                backgroundColor: ['#BFDBFE', '#93B4FF', '#5B8CFF', '#3666F6'],
                 borderRadius: 6,
                 maxBarThickness: 48
             }]
@@ -244,7 +244,7 @@
             scales: {
                 y: {
                     beginAtZero: true,
-                    grid: { color: '#F0ECF3' },
+                    grid: { color: '#E2E8F0' },
                     ticks: { precision: 0 }
                 },
                 x: {
@@ -262,7 +262,7 @@
             labels: ['Shortlisted', 'Under Review', 'Rejected', 'Pending'],
             datasets: [{
                 data: [42, 86, 25, 95],
-                backgroundColor: ['#8751E8', '#B99AEF', '#E6DDF2', '#D7D0DE'],
+                backgroundColor: ['#3666F6', '#93B4FF', '#CBD5E1', '#E2E8F0'],
                 borderWidth: 0,
                 hoverOffset: 5
             }]
@@ -297,7 +297,7 @@
             datasets: [{
                 label: 'Candidates',
                 data: [58, 72, 45, 38, 35],
-                backgroundColor: '#8751E8',
+                backgroundColor: '#3666F6',
                 borderRadius: 6,
                 maxBarThickness: 45
             }]
@@ -311,7 +311,7 @@
             scales: {
                 x: {
                     beginAtZero: true,
-                    grid: { color: '#F0ECF3' },
+                    grid: { color: '#E2E8F0' },
                     ticks: { precision: 0 }
                 },
                 y: {

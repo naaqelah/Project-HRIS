@@ -77,25 +77,25 @@
     {{-- Header --}}
     <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
-            <h2 class="text-xl font-semibold text-[#21172F]">
+            <h2 class="text-xl font-semibold text-[#14243A]">
                 Shortlisted Candidates
             </h2>
-            <p class="mt-1 text-sm text-[#9589A4]">
+            <p class="mt-1 text-sm text-[#718096]">
                 Manage candidates selected for the next recruitment stage.
             </p>
         </div>
 
         <a href="{{ route('candidates.index') }}"
-            class="inline-flex items-center justify-center gap-2 rounded-lg border border-[#ECE7F1] bg-white px-4 py-2.5 text-sm font-medium text-[#51465F] hover:bg-[#FAF8FC]">
+            class="inline-flex items-center justify-center gap-2 rounded-lg border border-[#3763FF] bg-[#3763FF] px-4 py-2.5 text-sm font-medium text-white hover:bg-[#2F55E7] transition">
             <i class="fa-solid fa-users"></i>
             All Candidates
         </a>
     </div>
 
     {{-- Demo Notice --}}
-    <div class="flex items-center gap-2 rounded-lg border border-[#E8DDFB] bg-[#F8F4FF] px-4 py-3">
-        <i class="fa-solid fa-circle-info text-[#8751E8]"></i>
-        <p class="text-xs text-[#725A91]">
+    <div class="flex items-center gap-2 rounded-lg border border-[#D7E5F5] bg-[#EFF6FF] px-4 py-3">
+        <i class="fa-solid fa-circle-info text-[#315A8A]"></i>
+        <p class="text-xs text-[#526174]">
             Demo data only. Shortlist changes are not yet saved to MySQL.
         </p>
     </div>
@@ -103,75 +103,75 @@
     {{-- Statistics --}}
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
 
-        <div class="rounded-xl border border-[#ECE7F1] bg-white p-5">
+        <div class="rounded-xl border border-[#E2E8F0] bg-white p-5">
             <div class="flex items-center justify-between">
-                <p class="text-sm text-[#9589A4]">Total Shortlisted</p>
-                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-[#F2EAFF] text-[#8751E8]">
+                <p class="text-sm text-[#718096]">Total Shortlisted</p>
+                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-[#EAF1FA] text-[#315A8A]">
                     <i class="fa-solid fa-user-check"></i>
                 </span>
             </div>
-            <h3 id="totalShortlisted" class="mt-4 text-2xl font-semibold text-[#21172F]">42</h3>
-            <p class="mt-2 text-xs text-[#9589A4]">Selected candidates</p>
+            <h3 id="totalShortlisted" class="mt-4 text-2xl font-semibold text-[#14243A]">42</h3>
+            <p class="mt-2 text-xs text-[#718096]">Selected candidates</p>
         </div>
 
-        <div class="rounded-xl border border-[#ECE7F1] bg-white p-5">
+        <div class="rounded-xl border border-[#E2E8F0] bg-white p-5">
             <div class="flex items-center justify-between">
-                <p class="text-sm text-[#9589A4]">High Match</p>
+                <p class="text-sm text-[#718096]">High Match</p>
                 <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-green-50 text-green-600">
                     <i class="fa-solid fa-star"></i>
                 </span>
             </div>
-            <h3 class="mt-4 text-2xl font-semibold text-[#21172F]">28</h3>
-            <p class="mt-2 text-xs text-[#9589A4]">Match score above 85%</p>
+            <h3 class="mt-4 text-2xl font-semibold text-[#14243A]">28</h3>
+            <p class="mt-2 text-xs text-[#718096]">Match score above 85%</p>
         </div>
 
-        <div class="rounded-xl border border-[#ECE7F1] bg-white p-5">
+        <div class="rounded-xl border border-[#E2E8F0] bg-white p-5">
             <div class="flex items-center justify-between">
-                <p class="text-sm text-[#9589A4]">Interview Ready</p>
+                <p class="text-sm text-[#718096]">Interview Ready</p>
                 <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
                     <i class="fa-solid fa-calendar-check"></i>
                 </span>
             </div>
-            <h3 class="mt-4 text-2xl font-semibold text-[#21172F]">18</h3>
-            <p class="mt-2 text-xs text-[#9589A4]">Ready for next stage</p>
+            <h3 class="mt-4 text-2xl font-semibold text-[#14243A]">18</h3>
+            <p class="mt-2 text-xs text-[#718096]">Ready for next stage</p>
         </div>
 
-        <div class="rounded-xl border border-[#ECE7F1] bg-white p-5">
+        <div class="rounded-xl border border-[#E2E8F0] bg-white p-5">
             <div class="flex items-center justify-between">
-                <p class="text-sm text-[#9589A4]">Job Positions</p>
+                <p class="text-sm text-[#718096]">Job Positions</p>
                 <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-orange-50 text-orange-600">
                     <i class="fa-solid fa-briefcase"></i>
                 </span>
             </div>
-            <h3 class="mt-4 text-2xl font-semibold text-[#21172F]">5</h3>
-            <p class="mt-2 text-xs text-[#9589A4]">Positions represented</p>
+            <h3 class="mt-4 text-2xl font-semibold text-[#14243A]">5</h3>
+            <p class="mt-2 text-xs text-[#718096]">Positions represented</p>
         </div>
 
     </div>
 
     {{-- Candidate Table --}}
-    <div class="overflow-hidden rounded-xl border border-[#ECE7F1] bg-white">
+    <div class="overflow-hidden rounded-xl border border-[#E2E8F0] bg-white">
 
         {{-- Table Header --}}
-        <div class="border-b border-[#ECE7F1] p-5">
-            <h3 class="font-semibold text-[#21172F]">Shortlisted List</h3>
-            <p class="mt-1 text-xs text-[#9589A4]">
+        <div class="border-b border-[#E2E8F0] p-5">
+            <h3 class="font-semibold text-[#14243A]">Shortlisted List</h3>
+            <p class="mt-1 text-xs text-[#718096]">
                 Candidates with the highest compatibility scores
             </p>
         </div>
 
         {{-- Filters --}}
-        <div class="flex flex-col gap-3 border-b border-[#ECE7F1] p-5 lg:flex-row">
+        <div class="flex flex-col gap-3 border-b border-[#E2E8F0] p-5 lg:flex-row">
 
             <div class="relative flex-1">
-                <i class="fa-solid fa-search absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#A69AAF]"></i>
+                <i class="fa-solid fa-search absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#718096]"></i>
                 <input type="text" id="searchCandidate"
                     placeholder="Search candidate name or email..."
-                    class="w-full rounded-lg border border-[#ECE7F1] py-2.5 pl-9 pr-3 text-sm outline-none focus:border-[#8751E8]">
+                    class="w-full rounded-lg border border-[#E2E8F0] py-2.5 pl-9 pr-3 text-sm text-[#33445B] outline-none focus:border-[#315A8A] focus:ring-2 focus:ring-blue-100">
             </div>
 
             <select id="positionFilter"
-                class="rounded-lg border border-[#ECE7F1] bg-white px-3 py-2.5 text-sm text-[#51465F] outline-none focus:border-[#8751E8]">
+                class="rounded-lg border border-[#E2E8F0] bg-white px-3 py-2.5 text-sm text-[#526174] outline-none focus:border-[#315A8A] focus:ring-2 focus:ring-blue-100">
                 <option value="">All Positions</option>
                 <option value="UI/UX Designer">UI/UX Designer</option>
                 <option value="Frontend Developer">Frontend Developer</option>
@@ -181,14 +181,14 @@
             </select>
 
             <select id="scoreFilter"
-                class="rounded-lg border border-[#ECE7F1] bg-white px-3 py-2.5 text-sm text-[#51465F] outline-none focus:border-[#8751E8]">
+                class="rounded-lg border border-[#E2E8F0] bg-white px-3 py-2.5 text-sm text-[#526174] outline-none focus:border-[#315A8A] focus:ring-2 focus:ring-blue-100">
                 <option value="">All Match Scores</option>
                 <option value="high">90% - 100%</option>
                 <option value="medium">80% - 89%</option>
             </select>
 
             <button onclick="resetFilters()"
-                class="rounded-lg border border-[#ECE7F1] px-4 py-2.5 text-sm text-[#51465F] hover:bg-[#FAF8FC]">
+                class="rounded-lg border border-[#E2E8F0] px-4 py-2.5 text-sm text-[#526174] hover:bg-[#F5F8FC] hover:text-[#315A8A]">
                 Reset
             </button>
         </div>
@@ -196,7 +196,7 @@
         {{-- Table --}}
         <div class="overflow-x-auto">
             <table class="w-full text-left text-sm">
-                <thead class="bg-[#FAF9FC] text-xs text-[#9589A4]">
+                <thead class="bg-[#F5F8FC] text-xs text-[#718096]">
                     <tr>
                         <th class="px-5 py-4 font-medium">Candidate</th>
                         <th class="px-5 py-4 font-medium">Job Position</th>
@@ -208,10 +208,10 @@
                     </tr>
                 </thead>
 
-                <tbody id="candidateTable" class="divide-y divide-[#F0ECF3]">
+                <tbody id="candidateTable" class="divide-y divide-[#E8EDF4]">
 
                     @foreach ($candidates as $candidate)
-                        <tr class="candidate-row hover:bg-[#FCFAFF]"
+                        <tr class="candidate-row hover:bg-[#F5F8FC] transition-colors"
                             data-name="{{ strtolower($candidate['name']) }}"
                             data-email="{{ strtolower($candidate['email']) }}"
                             data-position="{{ $candidate['position'] }}"
@@ -219,42 +219,42 @@
 
                             <td class="whitespace-nowrap px-5 py-4">
                                 <div class="flex items-center gap-3">
-                                    <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#F0E8FC] font-semibold text-[#8751E8]">
+                                    <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#EAF1FA] font-semibold text-[#315A8A]">
                                         {{ strtoupper(substr($candidate['name'], 0, 1)) }}
                                     </div>
                                     <div>
-                                        <p class="font-medium text-[#21172F]">
+                                        <p class="font-medium text-[#14243A]">
                                             {{ $candidate['name'] }}
                                         </p>
-                                        <p class="mt-1 text-xs text-[#9589A4]">
+                                        <p class="mt-1 text-xs text-[#718096]">
                                             {{ $candidate['email'] }}
                                         </p>
                                     </div>
                                 </div>
                             </td>
 
-                            <td class="whitespace-nowrap px-5 py-4 text-[#51465F]">
+                            <td class="whitespace-nowrap px-5 py-4 text-[#526174]">
                                 {{ $candidate['position'] }}
                             </td>
 
-                            <td class="whitespace-nowrap px-5 py-4 text-[#51465F]">
+            <td class="whitespace-nowrap px-5 py-4 text-[#526174]">
                                 {{ $candidate['experience'] }}
                             </td>
 
                             <td class="whitespace-nowrap px-5 py-4">
                                 <div class="flex items-center gap-2">
-                                    <span class="font-semibold text-[#8751E8]">
+                                    <span class="font-semibold text-[#315A8A]">
                                         {{ $candidate['score'] }}%
                                     </span>
-                                    <div class="h-1.5 w-16 overflow-hidden rounded-full bg-[#EEE9F4]">
-                                        <div class="h-full rounded-full bg-[#8751E8]"
+                                    <div class="h-1.5 w-16 overflow-hidden rounded-full bg-[#E2E8F0]">
+                                        <div class="h-full rounded-full bg-[#315A8A]"
                                             style="width: {{ $candidate['score'] }}%">
                                         </div>
                                     </div>
                                 </div>
                             </td>
 
-                            <td class="whitespace-nowrap px-5 py-4 text-[#9589A4]">
+                            <td class="whitespace-nowrap px-5 py-4 text-[#718096]">
                                 {{ $candidate['date'] }}
                             </td>
 
@@ -268,7 +268,7 @@
                                 <div class="flex items-center justify-center gap-2">
                                     <button
                                         onclick='viewCandidate(@json($candidate))'
-                                        class="flex h-8 w-8 items-center justify-center rounded-lg text-[#8751E8] hover:bg-[#F2EAFF]"
+                                        class="flex h-8 w-8 items-center justify-center rounded-lg text-[#315A8A] hover:bg-[#EAF1FA] transition"
                                         title="View details">
                                         <i class="fa-regular fa-eye"></i>
                                     </button>
@@ -290,15 +290,15 @@
 
         {{-- Empty State --}}
         <div id="emptyState" class="hidden px-5 py-12 text-center">
-            <i class="fa-solid fa-users text-3xl text-[#C8BBD5]"></i>
-            <p class="mt-3 font-medium text-[#51465F]">No candidates found</p>
-            <p class="mt-1 text-sm text-[#9589A4]">
+            <i class="fa-solid fa-users text-3xl text-[#A0AEC0]"></i>
+            <p class="mt-3 font-medium text-[#526174]">No candidates found</p>
+            <p class="mt-1 text-sm text-[#718096]">
                 Try adjusting your search or filters.
             </p>
         </div>
 
-        <div class="border-t border-[#ECE7F1] px-5 py-4">
-            <p class="text-xs text-[#9589A4]">
+        <div class="border-t border-[#E2E8F0] px-5 py-4">
+            <p class="text-xs text-[#718096]">
                 Showing <span id="visibleCount">5</span> demo candidates
             </p>
         </div>
@@ -313,14 +313,14 @@
 
     <div class="w-full max-w-xl rounded-2xl bg-white shadow-xl">
 
-        <div class="flex items-center justify-between border-b border-[#ECE7F1] px-6 py-5">
+        <div class="flex items-center justify-between border-b border-[#E2E8F0] px-6 py-5">
             <div>
-                <h3 class="font-semibold text-[#21172F]">Candidate Details</h3>
-                <p class="mt-1 text-xs text-[#9589A4]">Candidate profile information</p>
+                <h3 class="font-semibold text-[#14243A]">Candidate Details</h3>
+                <p class="mt-1 text-xs text-[#718096]">Candidate profile information</p>
             </div>
 
             <button onclick="closeModal()"
-                class="flex h-8 w-8 items-center justify-center rounded-lg text-[#9589A4] hover:bg-[#F5F2F8]">
+                class="flex h-8 w-8 items-center justify-center rounded-lg text-[#718096] hover:bg-[#F5F8FC]">
                 <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
@@ -329,56 +329,55 @@
 
             <div class="flex items-center gap-4">
                 <div id="detailAvatar"
-                    class="flex h-14 w-14 items-center justify-center rounded-full bg-[#F0E8FC] text-xl font-semibold text-[#8751E8]">
+                    class="flex h-14 w-14 items-center justify-center rounded-full bg-[#EAF1FA] text-xl font-semibold text-[#315A8A]">
                 </div>
                 <div>
-                    <h4 id="detailName" class="font-semibold text-[#21172F]"></h4>
-                    <p id="detailEmail" class="mt-1 text-sm text-[#9589A4]"></p>
+                    <h4 id="detailName" class="font-semibold text-[#14243A]"></h4>
+                    <p id="detailEmail" class="mt-1 text-sm text-[#718096]"></p>
                 </div>
             </div>
 
             <div class="grid grid-cols-2 gap-4">
-                <div class="rounded-lg bg-[#FAF9FC] p-3">
-                    <p class="text-xs text-[#9589A4]">Applied Position</p>
-                    <p id="detailPosition" class="mt-2 text-sm font-medium text-[#21172F]"></p>
+                <div class="rounded-lg bg-[#F5F8FC] p-3">
+                    <p class="text-xs text-[#718096]">Applied Position</p>
+                    <p id="detailPosition" class="mt-2 text-sm font-medium text-[#14243A]"></p>
                 </div>
 
-                <div class="rounded-lg bg-[#FAF9FC] p-3">
-                    <p class="text-xs text-[#9589A4]">Experience</p>
-                    <p id="detailExperience" class="mt-2 text-sm font-medium text-[#21172F]"></p>
+                <div class="rounded-lg bg-[#F5F8FC] p-3">
+                    <p class="text-xs text-[#718096]">Experience</p>
+                    <p id="detailExperience" class="mt-2 text-sm font-medium text-[#14243A]"></p>
                 </div>
 
-                <div class="rounded-lg bg-[#FAF9FC] p-3 col-span-2">
-                    <p class="text-xs text-[#9589A4]">Education</p>
-                    <p id="detailEducation" class="mt-2 text-sm font-medium text-[#21172F]"></p>
+                <div class="rounded-lg bg-[#F5F8FC] p-3 col-span-2">
+                    <p class="text-xs text-[#718096]">Education</p>
+                    <p id="detailEducation" class="mt-2 text-sm font-medium text-[#14243A]"></p>
                 </div>
             </div>
 
             <div>
                 <div class="mb-2 flex items-center justify-between">
-                    <p class="text-sm font-medium text-[#51465F]">AI Match Score</p>
-                    <p id="detailScore" class="font-semibold text-[#8751E8]"></p>
+                    <p class="text-sm font-medium text-[#526174]">AI Match Score</p>
+                    <p id="detailScore" class="font-semibold text-[#315A8A]"></p>
                 </div>
-                <div class="h-2 overflow-hidden rounded-full bg-[#EEE9F4]">
+                <div class="h-2 overflow-hidden rounded-full bg-[#E2E8F0]">
                     <div id="detailProgress"
-                        class="h-full rounded-full bg-[#8751E8]"></div>
+                        class="h-full rounded-full bg-[#315A8A]"></div>
                 </div>
             </div>
 
             <div>
-                <p class="mb-3 text-sm font-medium text-[#51465F]">Skills</p>
+                <p class="mb-3 text-sm font-medium text-[#526174]">Skills</p>
                 <div id="detailSkills" class="flex flex-wrap gap-2"></div>
             </div>
 
         </div>
 
-        <div class="flex justify-end border-t border-[#ECE7F1] px-6 py-4">
+        <div class="flex justify-end border-t border-[#E2E8F0] px-6 py-4">
             <button onclick="closeModal()"
-                class="rounded-lg bg-[#8751E8] px-5 py-2 text-sm font-medium text-white hover:bg-[#7440D0]">
+                class="rounded-lg bg-[#315A8A] px-5 py-2 text-sm font-medium text-white hover:bg-[#25496F] transition">
                 Close
             </button>
         </div>
-
     </div>
 </div>
 
@@ -452,7 +451,7 @@
 
         candidate.skills.forEach(skill => {
             const badge = document.createElement('span');
-            badge.className = 'rounded-full bg-[#F2EAFF] px-3 py-1.5 text-xs text-[#8751E8]';
+            badge.className = 'rounded-full bg-[#EAF1FA] px-3 py-1.5 text-xs text-[#315A8A]';
             badge.textContent = skill;
             skillsContainer.appendChild(badge);
         });

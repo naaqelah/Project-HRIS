@@ -82,18 +82,18 @@
                 justify-between gap-4">
 
         <div>
-            <h1 class="text-xl font-bold text-[#21172F]">
+            <h1 class="text-xl font-bold text-[#0F172A]">
                 Recruitment Overview
             </h1>
 
-            <p class="text-xs text-[#9589A4] mt-1">
+            <p class="text-xs text-[#64748B] mt-1">
                 Monitor your recruitment performance and candidate insights.
             </p>
         </div>
 
         <a href="#"
            class="inline-flex items-center justify-center gap-2
-                  bg-[#8751E8] hover:bg-[#7540D5]
+                  bg-[#3666F6] hover:bg-[#2851D8]
                   text-white px-4 py-2.5 rounded-xl
                   text-xs font-semibold transition-all
                   shadow-sm hover:shadow-md">
@@ -113,7 +113,7 @@
     <!-- DARK OVERVIEW PANEL -->
     <!-- ====================================== -->
 
-    <section class="bg-[#160E24] rounded-2xl overflow-hidden
+    <section class="bg-[#0F172A] rounded-2xl overflow-hidden
                     text-white shadow-sm">
 
         <div class="p-5 md:p-6">
@@ -127,11 +127,11 @@
                     <div class="flex items-center gap-2">
 
                         <span class="w-2 h-2 rounded-full
-                                     bg-[#A77AF4]"></span>
+                                     bg-[#93B4FF]"></span>
 
                         <span class="text-[10px] font-semibold
                                      uppercase tracking-widest
-                                     text-[#B9AACD]">
+                                     text-[#CBD5E1]">
                             Recruitment Dashboard
                         </span>
 
@@ -141,13 +141,13 @@
                         Recruitment Performance
                     </h2>
 
-                    <p class="text-xs text-[#A99BB9] mt-1">
+                    <p class="text-xs text-[#94A3B8] mt-1">
                         Your recruitment activities at a glance.
                     </p>
                 </div>
 
-                <select class="bg-[#281B38] border border-[#49365E]
-                               text-[#D8CBE8] text-xs rounded-lg
+                <select class="bg-[#1E293B] border border-[#334155]
+                               text-[#E2E8F0] text-xs rounded-lg
                                px-3 py-2 outline-none">
 
                     <option>November 2026</option>
@@ -162,13 +162,13 @@
             <!-- STATISTICS -->
 
             <div class="grid grid-cols-2 lg:grid-cols-4
-                        divide-x divide-[#49365E]">
+                        divide-x divide-[#334155]">
 
                 <!-- CV ANALYZED -->
 
                 <div class="px-3 sm:px-5 py-2">
 
-                    <p class="text-[10px] text-[#B9AACD]">
+                    <p class="text-[10px] text-[#CBD5E1]">
                         Total CV Analyzed
                     </p>
 
@@ -179,13 +179,13 @@
                             248
                         </h3>
 
-                        <span class="text-[10px] text-[#B9AACD]">
+                        <span class="text-[10px] text-[#CBD5E1]">
                             CVs
                         </span>
 
                     </div>
 
-                    <p class="text-[10px] text-[#A77AF4] mt-2">
+                    <p class="text-[10px] text-[#93B4FF] mt-2">
                         ↑ 12.5% from last month
                     </p>
 
@@ -196,7 +196,7 @@
 
                 <div class="px-3 sm:px-5 py-2">
 
-                    <p class="text-[10px] text-[#B9AACD]">
+                    <p class="text-[10px] text-[#CBD5E1]">
                         Total Candidates
                     </p>
 
@@ -206,13 +206,13 @@
                             186
                         </h3>
 
-                        <span class="text-[10px] text-[#B9AACD]">
+                        <span class="text-[10px] text-[#CBD5E1]">
                             People
                         </span>
 
                     </div>
 
-                    <p class="text-[10px] text-[#A99BB9] mt-2">
+                    <p class="text-[10px] text-[#94A3B8] mt-2">
                         Registered candidates
                     </p>
 
@@ -223,7 +223,7 @@
 
                 <div class="px-3 sm:px-5 py-2">
 
-                    <p class="text-[10px] text-[#B9AACD]">
+                    <p class="text-[10px] text-[#CBD5E1]">
                         Average Match Score
                     </p>
 
@@ -235,7 +235,7 @@
 
                     </div>
 
-                    <p class="text-[10px] text-[#A77AF4] mt-2">
+                    <p class="text-[10px] text-[#93B4FF] mt-2">
                         ↑ 4.2% from last month
                     </p>
 
@@ -246,7 +246,7 @@
 
                 <div class="px-3 sm:px-5 py-2">
 
-                    <p class="text-[10px] text-[#B9AACD]">
+                    <p class="text-[10px] text-[#CBD5E1]">
                         Active Positions
                     </p>
 
@@ -256,13 +256,13 @@
                             12
                         </h3>
 
-                        <span class="text-[10px] text-[#B9AACD]">
+                        <span class="text-[10px] text-[#CBD5E1]">
                             Jobs
                         </span>
 
                     </div>
 
-                    <p class="text-[10px] text-[#A99BB9] mt-2">
+                    <p class="text-[10px] text-[#94A3B8] mt-2">
                         Across 5 departments
                     </p>
 
@@ -273,7 +273,7 @@
 
             <!-- RECRUITMENT ACTIVITY -->
 
-            <div class="mt-6 pt-5 border-t border-[#49365E]">
+            <div class="mt-6 pt-5 border-t border-[#334155]">
 
                 <div class="flex items-center justify-between mb-4">
 
@@ -282,12 +282,12 @@
                             Recruitment Activity
                         </h3>
 
-                        <p class="text-[10px] text-[#A99BB9] mt-1">
+                        <p class="text-[10px] text-[#94A3B8] mt-1">
                             Monthly CV analysis progress
                         </p>
                     </div>
 
-                    <span class="text-[10px] text-[#A99BB9]">
+                    <span class="text-[10px] text-[#94A3B8]">
                         Jun – Nov 2026
                     </span>
 
@@ -297,24 +297,24 @@
                 <!-- ACTIVITY PROGRESS -->
 
                 <div class="flex items-center gap-1.5 h-2
-                            bg-[#30213F] rounded-full overflow-hidden">
+                            bg-[#334155] rounded-full overflow-hidden">
 
-                    <div class="h-full bg-[#8751E8] rounded-full"
+                    <div class="h-full bg-[#3666F6] rounded-full"
                          style="width: 23%"></div>
 
-                    <div class="h-full bg-[#A77AF4] rounded-full"
+                    <div class="h-full bg-[#93B4FF] rounded-full"
                          style="width: 18%"></div>
 
-                    <div class="h-full bg-[#C4A7FF] rounded-full"
+                    <div class="h-full bg-[#5B8CFF] rounded-full"
                          style="width: 15%"></div>
 
-                    <div class="h-full bg-[#8751E8] rounded-full"
+                    <div class="h-full bg-[#3666F6] rounded-full"
                          style="width: 20%"></div>
 
-                    <div class="h-full bg-[#A77AF4] rounded-full"
+                    <div class="h-full bg-[#93B4FF] rounded-full"
                          style="width: 12%"></div>
 
-                    <div class="h-full bg-[#D7C5FA] rounded-full"
+                    <div class="h-full bg-[#BBD3FF] rounded-full"
                          style="width: 12%"></div>
 
                 </div>
@@ -326,7 +326,7 @@
 
                         <div class="text-center">
 
-                            <p class="text-[10px] text-[#B9AACD]">
+                            <p class="text-[10px] text-[#CBD5E1]">
                                 {{ $month }}
                             </p>
 
@@ -343,12 +343,12 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6">
 
-                <div class="bg-[#251A34] border border-[#49365E]
+                <div class="bg-[#172554] border border-[#334155]
                             rounded-xl p-3 flex items-center
                             justify-between">
 
                     <div>
-                        <p class="text-[10px] text-[#B9AACD]">
+                        <p class="text-[10px] text-[#CBD5E1]">
                             Excellent Match
                         </p>
 
@@ -357,7 +357,7 @@
                         </h4>
                     </div>
 
-                    <div class="w-9 h-9 rounded-lg bg-[#8751E8]
+                    <div class="w-9 h-9 rounded-lg bg-[#3666F6]
                                 flex items-center justify-center">
 
                         <svg class="w-4 h-4" viewBox="0 0 24 24"
@@ -371,12 +371,12 @@
                 </div>
 
 
-                <div class="bg-[#251A34] border border-[#49365E]
+                <div class="bg-[#172554] border border-[#334155]
                             rounded-xl p-3 flex items-center
                             justify-between">
 
                     <div>
-                        <p class="text-[10px] text-[#B9AACD]">
+                        <p class="text-[10px] text-[#CBD5E1]">
                             Good Match
                         </p>
 
@@ -385,7 +385,7 @@
                         </h4>
                     </div>
 
-                    <div class="w-9 h-9 rounded-lg bg-[#60418D]
+                    <div class="w-9 h-9 rounded-lg bg-[#334155]
                                 flex items-center justify-center">
 
                         <svg class="w-4 h-4" viewBox="0 0 24 24"
@@ -399,12 +399,12 @@
                 </div>
 
 
-                <div class="bg-[#251A34] border border-[#49365E]
+                <div class="bg-[#172554] border border-[#334155]
                             rounded-xl p-3 flex items-center
                             justify-between">
 
                     <div>
-                        <p class="text-[10px] text-[#B9AACD]">
+                        <p class="text-[10px] text-[#CBD5E1]">
                             Low Match
                         </p>
 
@@ -413,7 +413,7 @@
                         </h4>
                     </div>
 
-                    <div class="w-9 h-9 rounded-lg bg-[#49365E]
+                    <div class="w-9 h-9 rounded-lg bg-[#334155]
                                 flex items-center justify-center">
 
                         <svg class="w-4 h-4" viewBox="0 0 24 24"
@@ -447,7 +447,7 @@
                     class="candidate-filter active-filter
                            px-4 py-2 rounded-full text-[11px]
                            font-semibold whitespace-nowrap
-                           bg-[#21172F] text-white">
+                           bg-[#0F172A] text-white">
 
                 All Candidates (186)
 
@@ -457,7 +457,7 @@
                     class="candidate-filter px-4 py-2 rounded-full
                            text-[11px] font-semibold whitespace-nowrap
                            bg-white border border-[#ECE7F1]
-                           text-[#766C80] hover:border-[#8751E8]">
+                           text-[#766C80] hover:border-[#3666F6]">
 
                 Excellent Match
 
@@ -467,7 +467,7 @@
                     class="candidate-filter px-4 py-2 rounded-full
                            text-[11px] font-semibold whitespace-nowrap
                            bg-white border border-[#ECE7F1]
-                           text-[#766C80] hover:border-[#8751E8]">
+                           text-[#766C80] hover:border-[#3666F6]">
 
                 Good Match
 
@@ -477,7 +477,7 @@
                     class="candidate-filter px-4 py-2 rounded-full
                            text-[11px] font-semibold whitespace-nowrap
                            bg-white border border-[#ECE7F1]
-                           text-[#766C80] hover:border-[#8751E8]">
+                           text-[#766C80] hover:border-[#3666F6]">
 
                 Low Match
 
@@ -491,7 +491,7 @@
         <div class="relative shrink-0">
 
             <svg class="w-4 h-4 absolute left-3 top-1/2
-                        -translate-y-1/2 text-[#9589A4]"
+                        -translate-y-1/2 text-[#64748B]"
                  viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="1.8">
 
@@ -507,7 +507,7 @@
                    class="w-full sm:w-52 pl-9 pr-3 py-2.5
                           rounded-full bg-white border
                           border-[#ECE7F1] text-xs
-                          outline-none focus:border-[#8751E8]">
+                          outline-none focus:border-[#3666F6]">
 
         </div>
 
@@ -529,16 +529,16 @@
                     sm:items-center justify-between gap-2">
 
             <div>
-                <h3 class="text-sm font-bold text-[#21172F]">
+                <h3 class="text-sm font-bold text-[#0F172A]">
                     Candidate Management
                 </h3>
 
-                <p class="text-[10px] text-[#9589A4] mt-1">
+                <p class="text-[10px] text-[#64748B] mt-1">
                     Review and manage AI evaluated candidates.
                 </p>
             </div>
 
-            <span class="text-[10px] text-[#9589A4]">
+            <span class="text-[10px] text-[#64748B]">
                 Last updated: 04 November 2026
             </span>
 
@@ -558,11 +558,11 @@
                 <div class="px-4 py-3 bg-[#FAF9FC]
                             flex items-center justify-between">
 
-                    <h4 class="text-xs font-bold text-[#21172F]">
+                    <h4 class="text-xs font-bold text-[#0F172A]">
                         Unpaid / Reviewed Candidates
                     </h4>
 
-                    <span class="text-[10px] text-[#9589A4]">
+                    <span class="text-[10px] text-[#64748B]">
                         5 Results
                     </span>
 
@@ -577,7 +577,7 @@
 
                         @php
                             $statusColor = match($candidate['status']) {
-                                'Excellent' => 'text-[#8751E8] bg-[#F0E8FF]',
+                                'Excellent' => 'text-[#3666F6] bg-[#E0EAFF]',
                                 'Good' => 'text-[#3477BD] bg-[#EAF3FF]',
                                 default => 'text-[#D97735] bg-[#FFF1E9]',
                             };
@@ -598,7 +598,7 @@
                                 class="candidate-item w-full text-left
                                        p-3 rounded-xl border
                                        {{ $index === 0
-                                          ? 'border-[#8751E8] bg-[#F7F2FF]'
+                                          ? 'border-[#3666F6] bg-[#E0EAFF]'
                                           : 'border-transparent hover:bg-[#FAF9FC]' }}
                                        transition-all duration-200"
                                 data-filter="{{ $candidate['status'] }}"
@@ -607,7 +607,7 @@
                             <div class="flex items-center gap-3">
 
                                 <div class="w-10 h-10 rounded-full
-                                            bg-[#EDE3FF] text-[#8751E8]
+                                            bg-[#EDE3FF] text-[#3666F6]
                                             flex items-center justify-center
                                             text-xs font-bold shrink-0">
 
@@ -621,14 +621,14 @@
                                                 justify-between gap-2">
 
                                         <h5 class="text-xs font-bold
-                                                   text-[#21172F] truncate">
+                                                   text-[#0F172A] truncate">
 
                                             {{ $candidate['name'] }}
 
                                         </h5>
 
                                         <span class="text-xs font-bold
-                                                     text-[#8751E8]">
+                                                     text-[#3666F6]">
 
                                             {{ $candidate['score'] }}%
 
@@ -636,7 +636,7 @@
 
                                     </div>
 
-                                    <p class="text-[10px] text-[#9589A4] mt-1">
+                                    <p class="text-[10px] text-[#64748B] mt-1">
                                         {{ $candidate['position'] }}
                                     </p>
 
@@ -652,7 +652,7 @@
                                         </span>
 
                                         <span class="text-[9px]
-                                                     text-[#A99BB9]">
+                                                     text-[#94A3B8]">
 
                                             {{ $candidate['date'] }}
 
@@ -671,7 +671,7 @@
                     <div id="empty-candidates"
                          class="hidden text-center py-8">
 
-                        <p class="text-xs text-[#9589A4]">
+                        <p class="text-xs text-[#64748B]">
                             No candidates found.
                         </p>
 
@@ -685,11 +685,11 @@
                 <div class="px-4 py-3 border-t border-[#ECE7F1]
                             flex justify-between items-center">
 
-                    <span class="text-[10px] text-[#9589A4]">
+                    <span class="text-[10px] text-[#64748B]">
                         Showing <span id="visible-count">5</span> candidates
                     </span>
 
-                    <button class="text-[10px] text-[#8751E8]
+                    <button class="text-[10px] text-[#3666F6]
                                    font-semibold hover:underline">
                         View All →
                     </button>
@@ -707,11 +707,11 @@
                             border-b border-[#ECE7F1]
                             flex justify-between items-center">
 
-                    <h4 class="text-xs font-bold text-[#21172F]">
+                    <h4 class="text-xs font-bold text-[#0F172A]">
                         Candidate Details
                     </h4>
 
-                    <span class="text-[10px] text-[#9589A4]">
+                    <span class="text-[10px] text-[#64748B]">
                         AI Evaluation Result
                     </span>
 
@@ -729,7 +729,7 @@
 
                             <div id="detail-avatar"
                                  class="w-14 h-14 rounded-xl
-                                        bg-[#EDE3FF] text-[#8751E8]
+                                        bg-[#EDE3FF] text-[#3666F6]
                                         flex items-center justify-center
                                         text-lg font-bold">
 
@@ -740,21 +740,21 @@
                             <div>
 
                                 <h3 id="detail-name"
-                                    class="text-base font-bold text-[#21172F]">
+                                    class="text-base font-bold text-[#0F172A]">
 
                                     Andi Pratama
 
                                 </h3>
 
                                 <p id="detail-email"
-                                   class="text-[10px] text-[#9589A4] mt-1">
+                                   class="text-[10px] text-[#64748B] mt-1">
 
                                     andi.pratama@email.com
 
                                 </p>
 
                                 <p id="detail-position"
-                                   class="text-xs font-medium text-[#8751E8] mt-1">
+                                   class="text-xs font-medium text-[#3666F6] mt-1">
 
                                     UI/UX Designer
 
@@ -779,10 +779,10 @@
                             </button>
 
                             <button type="button"
-                                    class="px-3 py-2 bg-[#8751E8]
+                                    class="px-3 py-2 bg-[#3666F6]
                                            text-white rounded-lg
                                            text-[10px] font-semibold
-                                           hover:bg-[#7540D5]">
+                                           hover:bg-[#2851D8]">
 
                                 Shortlist
 
@@ -795,7 +795,7 @@
 
                     <!-- MATCH SCORE -->
 
-                    <div class="bg-[#160E24] rounded-xl p-4
+                    <div class="bg-[#0F172A] rounded-xl p-4
                                 text-white">
 
                         <div class="flex items-center
@@ -803,7 +803,7 @@
 
                             <div>
 
-                                <p class="text-[10px] text-[#B9AACD]">
+                                <p class="text-[10px] text-[#CBD5E1]">
                                     AI Compatibility Score
                                 </p>
 
@@ -814,7 +814,7 @@
                                         96
                                     </h2>
 
-                                    <span class="text-sm text-[#B9AACD]">
+                                    <span class="text-sm text-[#CBD5E1]">
                                         %
                                     </span>
 
@@ -822,8 +822,8 @@
 
                                 <span id="detail-status"
                                       class="inline-block mt-2 px-2 py-1
-                                             rounded-full bg-[#3B2756]
-                                             text-[#D7C5FA] text-[9px]
+                                             rounded-full bg-[#1E3A8A]
+                                             text-[#BBD3FF] text-[9px]
                                              font-semibold">
 
                                     Excellent Match
@@ -834,7 +834,7 @@
 
 
                             <div class="w-20 h-20 rounded-full
-                                        border-[6px] border-[#8751E8]
+                                        border-[6px] border-[#3666F6]
                                         flex items-center justify-center
                                         relative">
 
@@ -853,10 +853,10 @@
                         <div class="mt-4">
 
                             <div class="w-full h-2 rounded-full
-                                        bg-[#49365E] overflow-hidden">
+                                        bg-[#334155] overflow-hidden">
 
                                 <div id="score-progress"
-                                     class="h-full rounded-full bg-[#A77AF4]"
+                                     class="h-full rounded-full bg-[#93B4FF]"
                                      style="width:96%">
                                 </div>
 
@@ -874,11 +874,11 @@
                         <div class="flex items-center
                                     justify-between mb-3">
 
-                            <h4 class="text-xs font-bold text-[#21172F]">
+                            <h4 class="text-xs font-bold text-[#0F172A]">
                                 Candidate Information
                             </h4>
 
-                            <span class="text-[10px] text-[#9589A4]">
+                            <span class="text-[10px] text-[#64748B]">
                                 Profile overview
                             </span>
 
@@ -889,12 +889,12 @@
 
                             <div class="bg-[#FAF9FC] rounded-xl p-3">
 
-                                <p class="text-[10px] text-[#9589A4]">
+                                <p class="text-[10px] text-[#64748B]">
                                     Work Experience
                                 </p>
 
                                 <p id="detail-experience"
-                                   class="text-xs font-bold text-[#21172F] mt-2">
+                                   class="text-xs font-bold text-[#0F172A] mt-2">
 
                                     4 Years
 
@@ -905,12 +905,12 @@
 
                             <div class="bg-[#FAF9FC] rounded-xl p-3">
 
-                                <p class="text-[10px] text-[#9589A4]">
+                                <p class="text-[10px] text-[#64748B]">
                                     Education
                                 </p>
 
                                 <p id="detail-education"
-                                   class="text-xs font-bold text-[#21172F] mt-2">
+                                   class="text-xs font-bold text-[#0F172A] mt-2">
 
                                     S1 Design Communication
 
@@ -927,7 +927,7 @@
 
                     <div>
 
-                        <h4 class="text-xs font-bold text-[#21172F] mb-3">
+                        <h4 class="text-xs font-bold text-[#0F172A] mb-3">
                             Matched Skills
                         </h4>
 
@@ -935,25 +935,25 @@
                              class="flex flex-wrap gap-2">
 
                             <span class="px-3 py-1.5 rounded-lg
-                                         bg-[#F0E8FF] text-[#8751E8]
+                                         bg-[#E0EAFF] text-[#3666F6]
                                          text-[10px] font-semibold">
                                 UI Design
                             </span>
 
                             <span class="px-3 py-1.5 rounded-lg
-                                         bg-[#F0E8FF] text-[#8751E8]
+                                         bg-[#E0EAFF] text-[#3666F6]
                                          text-[10px] font-semibold">
                                 Figma
                             </span>
 
                             <span class="px-3 py-1.5 rounded-lg
-                                         bg-[#F0E8FF] text-[#8751E8]
+                                         bg-[#E0EAFF] text-[#3666F6]
                                          text-[10px] font-semibold">
                                 Prototyping
                             </span>
 
                             <span class="px-3 py-1.5 rounded-lg
-                                         bg-[#F0E8FF] text-[#8751E8]
+                                         bg-[#E0EAFF] text-[#3666F6]
                                          text-[10px] font-semibold">
                                 User Research
                             </span>
@@ -969,13 +969,13 @@
                                 flex flex-col sm:flex-row
                                 sm:items-center justify-between gap-3">
 
-                        <p class="text-[10px] text-[#9589A4]">
+                        <p class="text-[10px] text-[#64748B]">
                             Analysis completed successfully
                         </p>
 
                         <button type="button"
                                 class="text-[11px] font-semibold
-                                       text-[#8751E8] hover:underline">
+                                       text-[#3666F6] hover:underline">
 
                             View Full Analysis →
 
@@ -1008,7 +1008,7 @@
 
         document.querySelectorAll('.candidate-item').forEach(item => {
 
-            item.classList.remove('border-[#8751E8]', 'bg-[#F7F2FF]');
+            item.classList.remove('border-[#3666F6]', 'bg-[#E0EAFF]');
 
             item.classList.add('border-transparent');
 
@@ -1016,7 +1016,7 @@
 
         button.classList.remove('border-transparent');
 
-        button.classList.add('border-[#8751E8]', 'bg-[#F7F2FF]');
+        button.classList.add('border-[#3666F6]', 'bg-[#E0EAFF]');
 
 
         document.getElementById('detail-avatar').textContent = data.initial;
@@ -1052,7 +1052,7 @@
 
             const span = document.createElement('span');
 
-            span.className = 'px-3 py-1.5 rounded-lg bg-[#F0E8FF] text-[#8751E8] text-[10px] font-semibold';
+            span.className = 'px-3 py-1.5 rounded-lg bg-[#E0EAFF] text-[#3666F6] text-[10px] font-semibold';
 
             span.textContent = skill;
 
@@ -1074,7 +1074,7 @@
 
         document.querySelectorAll('.candidate-filter').forEach(item => {
 
-            item.classList.remove('bg-[#21172F]', 'text-white');
+            item.classList.remove('bg-[#0F172A]', 'text-white');
 
             item.classList.add('bg-white', 'text-[#766C80]', 'border', 'border-[#ECE7F1]');
 
@@ -1083,7 +1083,7 @@
 
         button.classList.remove('bg-white', 'text-[#766C80]', 'border', 'border-[#ECE7F1]');
 
-        button.classList.add('bg-[#21172F]', 'text-white');
+        button.classList.add('bg-[#0F172A]', 'text-white');
 
 
         searchCandidates();
@@ -1134,7 +1134,7 @@
 
         if (firstVisible) {
 
-            const selected = firstVisible.classList.contains('border-[#8751E8]');
+            const selected = firstVisible.classList.contains('border-[#3666F6]');
 
             if (!selected) selectCandidate(firstVisible);
 
